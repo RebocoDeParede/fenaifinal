@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Página incrivel</title>
+    <link rel="stylesheet" href="../css/orcamentos.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+        <img src="../imagens/logo.png" alt="logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="about.html">Fenai</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contact.html">contato</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+
+    <section class="hero">
+
+    <div class="hero-content">
+
+        
+    
+        <h1><big>Financeiro</big></h1>
+        <p>Por aqui, voce pode entrar em contato com um dos nossos funcionários
+            para tirar qulquer dúvida financeira relacionada aos 
+            cursos
+        </p>
+
+        <img src="../imagens/logo.png" alt="Descrição da imagem">
+
+    </div>
+    </section>
+
+    
+    <section class="features">
+        <div class="container">
+
+            <div class="feature9">
+
+            <p>Não se esqueça! o respeito é primordial! Nos trate <br>
+                da mesma forma que deseja ser tratado.
+            </p>
+
+            </div>
+
+        <div class="formulario">
+            <form class="formularioQuestoes">
+
+            
+
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" required>
+                <span id="emailError" class="error"></span>
+            </div>
+            <br>
+            <div>
+                <label for="phone">Número de Telefone:</label><br>
+                <input type="tel" id="phone" required>
+            </div>
+            <br>
+            <div>
+                <label for="message">Mensagem:</label><br>
+                <textarea id="message" rows="4" cols="50"></textarea>
+            </div>
+            <br>
+            <button type="submit" onclick="handleSubmit()">Enviar</button>
+            
+            <script>
+                function handleSubmit() {
+                    const email = document.getElementById('email').value;
+                    const emailError = document.getElementById('emailError');
+            
+                    // Limpa a mensagem de erro
+                    emailError.textContent = '';
+            
+                    // Valida o email
+                    if (!validateEmail(email)) {
+                        emailError.textContent = 'Por favor, insira um email válido.';
+                        return;
+                    }
+            
+                    // Limpa os campos
+                    document.getElementById('email').value = '';
+                    document.getElementById('phone').value = '';
+                    document.getElementById('message').value = '';
+            
+                    // Mensagem de sucesso
+                    alert('Dados enviados com sucesso!');
+                }
+            
+                function validateEmail(email) {
+                    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    return re.test(String(email).toLowerCase());
+                }
+            </script>
+
+            <p>O tempo de resposta estimado no momento é de 20 minutos</p>
+            </form>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024. todos os direitos reservados.</p><br>
+            <div class="formasContato">
+            <a href="https://wa.me/5534996330100">Nosso telefone: (34) 9-9633 0100 </a>
+            <br>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNsMBlPZVLXWBvsDrsgTXgSkbDqwkCrcpbXHNKMBgCLzvGNHvqwdTmcZDxTpGxKRDgrcxq">Nosso E-mail: 0001075868@senaimgaluno.com.br</a>
+            </div>
+
+        </div>
+    </footer>
+</body>

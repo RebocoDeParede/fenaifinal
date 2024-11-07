@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    position: relative;
+    text-decoration: none;
+    margin: 0;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../imagens/tijolos.png);
+    opacity: 0.1; /* Ajuste o valor de opacidade conforme necessário */
+    z-index: -1; /* Coloca a imagem atrás do conteúdo */
+}
+
+header {
+    background: #245AA3;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.formasContato {
+    color: #3f2b2b;
+    text-decoration: none;
+}
+
+.header-container {
+    width: 80%; /* Ajustado para ser mais responsivo */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinha verticalmente */
+}
+
+.logo {
+    width: 200px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background: #c9c9c9;
+    border-radius: 5px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+}
+
+.hero-content {
+    background-color: rgba(56, 118, 242, 0.5);
+    border: 2px solid #ccc;
+    padding: 20px 100px;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.features {
+    padding: 20px 0; /* Espaçamento vertical */
+}
+
+.features-container {
+    display: flex; /* Habilita layout flexível */
+    justify-content: center; /* Centraliza os itens */
+    align-items: flex-start; /* Alinha os itens no topo */
+    flex-wrap: wrap; /* Permite quebra de linha */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+.feature {
+    background: rgba(56, 118, 242, 0.75);
+    border-radius: 8px; /* Ajuste o raio da borda */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    padding: 15px;
+    min-width: 300px; /* Largura mínima para cada feature */
+    flex: 1; /* Permite que as features ocupem espaço igual */
+    max-width: 300px; /* Largura máxima para manter uniformidade */
+}
+
+.feature img {
+    max-width: 50px; /* Tamanho reduzido para os ícones */
+    height: auto; /* Mantém a proporção */
+}
+
+footer {
+    background: rgba(56, 118, 242, 0.81);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+.footer-container {
+    width: 80%; /* Ajustado para ser mais responsivo */
+    margin: 0 auto;
+    text-decoration: none;
+}

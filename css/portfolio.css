@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    position: relative;
+    text-decoration: none;
+    margin: 0;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../imagens/tijolos.png);
+    opacity: 0.1; /* Ajuste o valor de opacidade conforme necessário (0 a 1) */
+    z-index: -1; /* Coloca a imagem atrás do conteúdo */
+}
+
+header{
+    background: #245AA3;
+    color: #fff;
+    padding: 10px 0;
+    align-content: left;
+}
+
+.header-container {
+    width: 80%; /* Ajustado para ser mais responsivo */
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinha verticalmente */
+}
+
+.formasContato{
+    color:#3f2b2b;
+    text-decoration: none;
+}
+
+.container{
+    width: 40%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.container a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.logo{
+    float: left;
+    width: 200px;
+}
+
+nav{
+    float: right;
+    margin-top: 10px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline;
+    margin-left: 10px;
+}
+
+nav ul li a{
+    color: #b9b9b9;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover{
+
+    background: #c9c9c9;
+    border-radius: 5px;
+}
+
+.hero {
+    display: flex;            /* Habilita o Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    height: 25vh;           /* Ocupa toda a altura da viewport */
+    
+}
+
+
+.hero-content {
+    background-color: rgba(56, 118, 242, 0.5); /* Branco com 30% de opacidade */
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 50px;
+    width: 3000px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button{
+
+    display: inline-block;
+    background: #007bff;
+    color: #c05454;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover{
+    background: #24fbff;
+}
+
+.features img {
+    max-width: 300px;
+    max-height: 300px;
+    width: auto; /* Mantém a proporção */
+    height: auto; /* Mantém a proporção */
+}
+
+
+.feature{
+    background: rgba(56, 118, 242, 0.75);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.feature img{
+    max-width: 1350px;
+    height:720px;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+footer{
+    background: rgba(56, 118, 242, 0.81);
+    color:#ffffff;
+    text-align: center;
+    padding: 10px 0;
+}

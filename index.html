@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Página Incrível</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <!------------------------------------------------>
+
+    <header class="header">
+        <div class="logo-container">
+            <img src="imagens/logo.png" alt="logo" class="logo">
+        </div>
+        <div class="container">
+            <button class="navbar-toggler" id="toggleButton" aria-label="Toggle navigation">
+                <span class="hamburguer"></span>
+                <span class="hamburguer"></span>
+                <span class="hamburguer"></span>
+            </button>
+            <nav class="navbar" id="navbarNav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="./paginas/about.html" class="nav-link active">Fenai</a></li>
+                    <li class="nav-item"><a href="./paginas/portfolio.html" class="nav-link">Portfólio</a></li>
+                    <li class="nav-item"><a href="./paginas/cursos.html" class="nav-link">Cursos</a></li>
+                    <li class="nav-item"><a href="./paginas/orcamentos.html" class="nav-link">Orçamentos</a></li>
+                    <li class="nav-item"><a href="./paginas/contact.html" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <script>
+        
+const toggleButton = document.getElementById('toggleButton');
+const navbarNav = document.getElementById('navbarNav');
+const closeButton = document.getElementById('closeButton');
+
+toggleButton.addEventListener('click', () => {
+    navbarNav.classList.toggle('active');
+});
+
+closeButton.addEventListener('click', () => {
+    navbarNav.classList.remove('active');
+});
+
+    </script>
+
+    <!------------------------------------------------->
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1><big>Seja você muito bem vindo(a) ao Fenai!</big></h1>
+            <p>Aqui você irá aprender como o mundo da indústria e da educação andam juntos!</p>
+            <img src="./imagens/logo.png" alt="Descrição da imagem">
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="features-container">
+            <div class="feature">
+                <h2>A cada desafio, um desafio pior ainda do Fenai</h2>
+                <p>Capacitamos os futuros destaques da indústria e impulsionamos os negócios de Minas e região.</p>
+                <img src="./imagens/pessoas1.png" alt="Serviço 1">
+                <br>
+                <br><br>
+                <br>
+            </div>
+            <div class="features-container2">
+                <div class="feature">
+                    <h2>Desenvolvimento Industrial</h2>
+                    <p>Promovemos o desenvolvimento sustentável e a competitividade da indústria mineira.</p>
+                    <br>
+                    <br>
+                    <img src="./imagens/pessoas2.png" alt="Serviço 2">
+                    <br>
+                    <br>
+                    <br>
+                    
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+            <div class="features-container3">
+                <div class="feature">
+                    <h2>Novas Oportunidades</h2>
+                    <p>Na Instituição de FENAI, oferecemos cursos nas áreas de Tecnologia, 
+                        Sustentabilidade, Marketing Digital, Saúde e Empreendedorismo. Com um corpo 
+                        docente qualificado e infraestrutura moderna, preparamos você para as novas 
+                        demandas do mercado de trabalho. Venha transformar sua paixão em profissão! 
+                        </p>
+                    
+                    
+                    <img src="./imagens/pessoas2.png" alt="Serviço 2">
+                    <br>
+                    <br>
+                    <br>
+                    
+                </div>
+            </div>
+
+
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024. Todos os direitos reservados.</p><br>
+            <div class="formasContato">
+                <a href="https://wa.me/5534996330100">Nosso telefone: (34) 9-9633 0100</a>
+                <br>
+                <a href="mailto:0001075868@senaimgaluno.com.br">Nosso E-mail: 0001075868@senaimgaluno.com.br</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
